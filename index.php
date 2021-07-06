@@ -1,6 +1,6 @@
 <?php
-require_once("../CLBS-DEMO/components.php");
-// require_once("../crud/php/operation.php");
+require_once("../CLBS-DEMO/components/components.php");
+//require_once("../CLBS-DEMO/operation.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,11 +68,11 @@ require_once("../CLBS-DEMO/components.php");
               <h3>Contact Form</h3>
               <label for="name">First name:</label><br />
               <!-- <input type="text" name="name" /> -->
-              <?php inputElement("name", "") ?>
+              <?php inputElement("first_name", "") ?>
               <br />
               <label for="surname">Surname:</label><br />
               <!-- <input type="text" name="surname" /> -->
-              <?php inputElement("surname", "") ?>
+              <?php inputElement("last_name", "") ?>
               <br />
               <label for="email">Email:</label><br />
               <!-- <input type="text" name="email" /> -->

@@ -5,7 +5,7 @@ function Createdb()
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "webdev-demo";
+    $dbname = "webdevDemo";
 
     // create connection
     $con = mysqli_connect($servername, $username, $password);
@@ -23,13 +23,14 @@ function Createdb()
 
         $sql = "
 
-            CREATE TABLE IF NOT EXISTS formSubmit (
+            CREATE TABLE formSubmit (
                 id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                first_name VARCHAR (25) NOT NULL,
-                last_name VARCHAR (25) NOT NULL,
-                email VARCHAR (25),
-                telephone FLOAT,
-                
+                first_name VARCHAR (20) NOT NULL,
+                last_name VARCHAR (20) NOT NULL,
+                email VARCHAR (20) NOT NULL,
+                telephone VARCHAR(15) NOT NULL,
+            );
+
         ";
 
         if (mysqli_query($con, $sql)) {
