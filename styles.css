@@ -84,16 +84,9 @@
   }
 
   .navbar__menu {
-    display: grid;
-    grid-template-columns: auto;
     margin: 0;
-    width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 0;
     transition: all 0.5s ease;
-    height: 50vh;
-    z-index: -1;
+    height: 10vh;
   }
 
   #navbar__logo {
@@ -116,6 +109,16 @@
     top: 20%;
     right: 5%;
     transform: translate(5%, 20%);
+  }
+}
+
+@media screen and(min-width: 960px) {
+  .navbar__links {
+    font-size: small;
+  }
+
+  .navbar__logo a {
+    font-size: 0.75rem;
   }
 }
 
